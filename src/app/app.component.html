@@ -1,4 +1,12 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<md-toolbar color="primary" class="mat-elevation-z6"><a [routerLink]="['']"><md-icon>code</md-icon>ng2.info</a></md-toolbar>
+<md-sidenav-container>
+  <md-sidenav mode="side" opened="true">
+    <md-nav-list *ngFor="let nav of sidenav">
+      <h3>{{ nav.section }}</h3>
+      <md-list-item *ngFor="let page of nav.pages">
+        <a md-line [routerLink]="[page.url]">{{ page.title }}</a>
+      </md-list-item>
+    </md-nav-list>
+  </md-sidenav>
+  <router-outlet></router-outlet>
+</md-sidenav-container>

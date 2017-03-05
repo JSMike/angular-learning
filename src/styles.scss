@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('~material-design-icons-iconfont/dist/material-design-icons.css');
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+
+html, body, md-sidenav-container, ngl-root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body, ngl-root {
+  flex-flow: column nowrap;
+}
+
+html, md-sidnav-container {
+  flex-flow: row nowrap;
+  flex: 1;
+}
+
+
