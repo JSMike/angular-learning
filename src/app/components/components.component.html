@@ -2,15 +2,15 @@
   <h1>Components</h1>
   <p>
     Components are the main building blocks of Angular applications. All of the html elements of an Angular application are either
-    a Component or part of a Component. Components in Angular are a special type of Directive that always contains a template which can either be inline inside of the
-    decorator or a separate html file. The html for the template follows Angular's special template syntax, and can include
-    other Components or Directives.
+    a Component or part of a Component. Components in Angular are an extension of Directives that always contain an html
+    template. The html template can either be written inline inside of the decorator metadata object or a separate html file.
+    The html for the template follows Angular's special template syntax, and can include other Components or Directives.
   </p>
   <p>
-    Components can optionally contain lifecycle hooks. These hooks are called by Angular at specific times during the rendering
-    of a Component, or when changes are made to the data contained inside of a Component. Depending on the timing, or which
-    lifecycle hook, you're using, you may or may not have access to external data points such as values being passed in to
-    the component, or DOM tree values.
+    All Components go through a lifecycle, and hooks can be added to execute at each lifecycle event. The Lifecycle hooks are
+    called by Angular at specific times during the rendering of a Component, or when changes are made to the data contained
+    inside of a Component. Depending on which lifecycle hook you're using you may or may not have access to external data
+    points such as values being passed in to the component, or DOM tree values.
   </p>
   <md-list>
     <h3>Components Overview</h3>

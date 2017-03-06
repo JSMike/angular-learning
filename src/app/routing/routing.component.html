@@ -1,26 +1,26 @@
 <div>
   <h1>Routing</h1>
   <p>
-    Routing allows for different pages to be loaded in response to URL changes. Page routing is at the core of every single page
-    application JavaScript framework, but Angular also levereges route configuration to split up your code into smaller chunks,
-    and enables lazy loading and pre-loading of routes. In previous web frameworks all of the code for all of the routes
-    was typically contained in a bundle when building an application, by separating out the code into smaller pieces Angular
-    is able to deliver a smaller payload, and process less code to get an initial page to display. Additional pages can then
-    be loaded in the background or on-demand as the user navigates through the application.
+    Routing allows for different pages to be loaded in response to URL changes. Page routing is at the core of every JavaScript
+    based single page application framework, but Angular also leverages route configuration for code splitting. This allows
+    for your code to be broken into smaller chunks and enables lazy loading and pre-loading of routes. In previous web frameworks
+    all of the code for all of the routes was typically required when building an application. By separating out the code
+    into smaller pieces Angular is able to deliver a smaller intial payload and process less code to get an initial page
+    to display. Additional pages can then be loaded in the background or on-demand as the user navigates through the application.
   </p>
   <p>
-    The Angular router can handle multiple named routes on a page, or auxiliary routes. This allows for different parts of a
-    page to react to route changes. A good example would be for a webmail portal with a preview pane, where the right side
-    of the application is displaying either a list of e-mails or a calendar based on the URL and the preview pane is displaying
-    details about a specifically selected item.
+    The Angular router can handle multiple named routes on a page, these are known as auxiliary routes. This allows for different
+    parts of a page to react to route changes. A good example would be for a webmail portal with a preview pane, where the
+    right side of the application is displaying either a list of e-mails or a calendar based on the URL and the preview pane
+    is displaying details about a specifically selected item. In this case the preview pane would be an auxiliary route.
   </p>
   <p>
     Guards can be added to routes to prevent lazy loading or accessing pages based on data from a service. Be sure to not confuse
-    this with security, as front-end code can always be manipulated by the end user, guards are intended to be a convenience
+    this with security, as front-end code can always be manipulated by the end user. Guards are intended to be a convenience
     to the end-user to not direct them towards pages in which the don't have access.
   </p>
   <md-list>
-    <h3>Routing Links</h3>
+    <h3>Routing Resources</h3>
     <md-list-item>
       <a href="https://www.youtube.com/watch?v=QLns6s02O48">The Angular Router</a>
     </md-list-item>
