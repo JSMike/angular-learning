@@ -1,7 +1,30 @@
 <div>
   <h1>NgModule</h1>
   <p>
-
+    Modules in Angular serve two purposes, first is to define which resources are available for a set of components, and secondly
+    modules also allow for chunks of code to be defined for reuse by other Angular applications. All Angular projects must
+    have at least one module, and the base module must select a component to be bootstrapped. Angular will then render the
+    application starting with the identified component.
   </p>
-
+  <p>
+    Another common use for modules is to create routing modules. The purpose of this is to define routing for when a module is
+    lazy loaded. Inside a Routing Module you will generally define child routes, which will change which components are rendered
+    based on URL changes. These routing modules are then imported into modules which define component dependencies. This
+    allows for separation of concerns when defining reusable chunks of code and the routing logic.
+  </p>
+  <md-list>
+    <h3>NgModule Resources</h3>
+    <md-list-item>
+      <a href="https://johnpapa.net/introducing-angular-modules-root-module/">Introducing Angular Modules - Root Module</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://johnpapa.net/introducing-angular-modules-feature-modules-2/">Introducing Angular Modules - Feature Modules</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://johnpapa.net/introducing-angular-modules-routing-module/">Introducing Angular Modules - Routing Module</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://auth0.com/blog/angular-2-ngmodules/">Use @NgModule to Manage Dependencies in your Angular 2 Apps</a>
+    </md-list-item>
+  </md-list>
 </div>

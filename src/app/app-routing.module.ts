@@ -43,6 +43,10 @@ const routes: Routes = [
     loadChildren: './pipes/pipes.module#PipesModule'
   },
   {
+    path: 'services',
+    loadChildren: './services/services.module#ServicesModule'
+  },
+  {
     path: 'routing',
     loadChildren: './routing/routing.module#RoutingModule'
   },

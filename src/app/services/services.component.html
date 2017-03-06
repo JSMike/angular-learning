@@ -1,0 +1,40 @@
+<div>
+  <h1>Services</h1>
+  <p>
+    Services in Angular are responsible for data, this includes application state, and data from external APIs. Services are
+    declared with the <code>@Injectable</code> decorator are added to the list providers inside of a module. Services
+    are added to a component through Angular's dependency injection system. This will ensure that if a service is pre-existing
+    that a new one won't be recreated, making services work as singletons that can be shared across multiple parts of the
+    application. Services can also be injected into other services, or into directives. Services can also easily be mocked
+    inside of a module, by providing a different service in place of an existing one, this is great for testing.
+  </p>
+  <p>
+    There is one caveat in terms of ensuring that services act as singletons throughout your application when using lazy loading.
+    Each time a module is lazy loaded it creates a new scope, and any services provided by the lazily loaded module will
+    be recreated. The proper work-around for this is to not include providers in lazily loaded modules unless a static forRoot
+    function is called. When a component that is lazily loaded tries to call a service that doesn't exist in the current
+    scope it will look up the tree to parent scopes to see if the service exists, so it's best practice to only include privders
+    at the root module of your application.
+  </p>
+  <p>
+    Services in Angular often use RxJS Observables to store and transmit data, <a [routerLink]="['advanced']">see the Advanced section on RxJS.</a>
+  </p>
+  <md-list>
+    <h3>@Injectable</h3>
+    <md-list-item>
+      <a href="http://tektutorialshub.com/angular-hierarchical-dependency-injection/">Angular 2 Hierarchical Dependency Injection</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://www.youtube.com/watch?v=oLtwPzr_8uA">Angular 2 - Fetch Data Using Http</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://angular.io/docs/ts/latest/guide/server-communication.html">Angular Docs - Server Communication Guide</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://www.youtube.com/watch?v=MKQ-c_ipLss&t=36s">Angular 2 - Http and Observables</a>
+    </md-list-item>
+    <md-list-item>
+      <a href="https://coryrylan.com/blog/angular-2-observable-data-services">Angular Observable Data Services</a>
+    </md-list-item>
+  </md-list>
+</div>

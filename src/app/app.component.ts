@@ -67,6 +67,10 @@ export class AppComponent {
             url: 'pipes'
           },
           {
+            title: 'Services',
+            url: 'services'
+          },
+          {
             title: 'Routing',
             url: 'routing'
           },

@@ -2,7 +2,7 @@
 
 :host {
   font-family: $mat-font-family;
-    & > * {
+    & > div {
     padding: 20px;
   }
 }
