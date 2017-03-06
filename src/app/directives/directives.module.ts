@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
-import { Ng2HandySyntaxHighlighterModule } from 'ng2-handy-syntax-highlighter';
 
 import { DirectivesRoutingModule } from './directives-routing.module';
 import { DirectivesComponent } from './directives.component';
@@ -10,7 +9,6 @@ import { DirectivesComponent } from './directives.component';
   imports: [
     CommonModule,
     MaterialModule,
-    Ng2HandySyntaxHighlighterModule,
     DirectivesRoutingModule
   ],
   declarations: [
