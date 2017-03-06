@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DirectivesModule } from './directives.module';
 import { DirectivesComponent } from './directives.component';
 
 describe('DirectivesComponent', () => {
@@ -8,7 +9,7 @@ describe('DirectivesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectivesComponent ]
+      imports: [ DirectivesModule ]
     })
     .compileComponents();
   }));

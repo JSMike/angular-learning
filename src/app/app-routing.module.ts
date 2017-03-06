@@ -5,7 +5,7 @@ import {
   PreloadAllModules
 } from '@angular/router';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     loadChildren: './home/home.module#HomeModule'

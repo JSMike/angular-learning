@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ScaffoldingModule } from './scaffolding.module';
 import { ScaffoldingComponent } from './scaffolding.component';
 
 describe('ScaffoldingComponent', () => {
@@ -8,7 +9,7 @@ describe('ScaffoldingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ScaffoldingComponent ]
+      imports: [ ScaffoldingModule ]
     })
     .compileComponents();
   }));

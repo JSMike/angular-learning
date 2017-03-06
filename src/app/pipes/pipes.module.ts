@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 import { PipesRoutingModule } from './pipes-routing.module';
 import { PipesComponent } from './pipes.component';
